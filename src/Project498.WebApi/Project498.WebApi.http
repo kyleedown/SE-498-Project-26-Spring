@@ -36,6 +36,48 @@ Accept: application/json
 
 ###
 
+# Strings - reversewords: simple two words
+GET {{HostAddress}}/strings/reversewords/hello%20world
+Accept: application/json
+
+###
+
+# Strings - reversewords: multiple words
+GET {{HostAddress}}/strings/reversewords/the%20quick%20brown%20fox
+Accept: application/json
+
+###
+
+# Strings - reversewords: single word
+GET {{HostAddress}}/strings/reversewords/hello
+Accept: application/json
+
+###
+
+# Strings - reversewords: with double space
+GET {{HostAddress}}/strings/reversewords/hello%20%20world
+Accept: application/json
+
+###
+
+# Strings - reversewords: leading space
+GET {{HostAddress}}/strings/reversewords/%20hello%20world
+Accept: application/json
+
+###
+
+# Strings - reversewords: trailing space
+GET {{HostAddress}}/strings/reversewords/hello%20world%20
+Accept: application/json
+
+###
+
+# Strings - reversewords: five words
+GET {{HostAddress}}/strings/reversewords/one%20two%20three%20four%20five
+Accept: application/json
+
+###
+
 # Users - Get all
 GET {{HostAddress}}/api/users
 Accept: application/json
